@@ -4,7 +4,11 @@ const redis = require('redis');
 // Setup Redis
 const redisClient = redis.createClient({
   url: process.env.REDIS_URI,
-  legacyMode:true
+  legacyMode:true,
+  socket: {
+    tls: true,
+    rejectUnauthorized: false
+  }
 });
 
 async function redisConnect() {
