@@ -31,7 +31,7 @@ app.use(cors());
 //       callback(new Error('Not allowed by CORS'))
 //     }
 //   }
-}
+//}
 
 app.get('/', (req, res) =>{res.send('success');})
 app.post('/signin', signin.signinAuthentication(db, bcrypt))
