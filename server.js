@@ -20,17 +20,17 @@ const app = express();
 
 app.use(morgan('combined'));
 app.use(bodyParser.json());
-app.use(cors(corsOptions));
+app.use(cors());
 
-const whitelist = ['https://sonny-smart-brain.herokuapp.com']
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
+// const whitelist = ['https://sonny-smart-brain.herokuapp.com']
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     if (whitelist.indexOf(origin) !== -1) {
+//       callback(null, true)
+//     } else {
+//       callback(new Error('Not allowed by CORS'))
+//     }
+//   }
 }
 
 app.get('/', (req, res) =>{res.send('success');})
