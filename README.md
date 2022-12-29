@@ -4,7 +4,7 @@ A React App that detects, then highlights faces in web images. Including a user 
 
 Built with React.js, Node.js, Express, Bcrypt, PostgreSQL, Redis, Tachyon CSS, Clarifai Face Detection API, and all running on Heroku Servers 'synched' with GitHub.
 
-Back-end Server Repo Link: https://github.com/Sonnyburni/smart-brain-api
+Back-end Server Repo Link: https://github.com/Sonnyburni/smart-brain
 
 <i>Thanks to Andrei Neagoie for creating the [ZTM Web Developer Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery) and [ZTM Junior to Senior Web Developer](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/) courses which SmartBrain is based on.
 <br><br>
